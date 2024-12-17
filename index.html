@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-black">
+    <img src="./uTorrent-Logo.png" class="text-center w-[150px] mt-[10px] mx-auto py-[40px]" alt="">
+    <h2 class="text-center text-white text-xl p-12 italic hover:non-italic">"Not Sure What to Watch? Find IMDB Ratings Instantly and Decide Whether It’s Worth Your Time!"</h2>
+    <div class="my-[1px] mx-auto w-[990px]  rounded-lg  flex items-center ">
+        
+        <input type="text" class="w-full border px-3 py-5 rounded-l-xl bg-neutral-300 focus: outline-neutral-200" placeholder="Search movies" id="movie-name" required>
+        <button onclick="search()" class=" w-[160px]  bg-green-400 text-white px-3 py-[22px]">Search</button>
+    </div>
+    <div id="container" class="w-[640px] mt-16 mx-auto">
+        <div class="flex text-neutral-50">
+            <div>
+                <h1 id="title" class="text-2xl text-neutral-200 uppercase tracking-wide">Mininons</h1>
+                <p class="text-neutral-400 text-lg my-1">Genre : <span class="text-neutral-200" id="genre">Fantasy</span></p>
+                <p class="text-neutral-400 text-lg my-1" id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta velit commodi esse.</p>
+                <p class="text-neutral-400 text-lg my-1">Actor : <span class="text-neutral-200" id="actor"></span></p>
+                <p class="text-neutral-400 text-lg my-1">Director : <span class="text-neutral-200" id="director"></span></p>
+                <p class="text-neutral-400 text-lg my-1">Awards : <span class="text-neutral-200" id="awards"></span></p>
+                <p class="text-neutral-400 text-lg my-1">Box-Office : <span class="text-neutral-200" id="collection"></span></p>
+                <p class="text-neutral-400 text-lg my-1">Language : <span class="text-neutral-200" id="language"></span></p>
+                <p class="text-neutral-400 text-lg my-1">IMDB ratings : <span class="text-neutral-200" id="rating"></span></p>
+            </div>
+            <div class="banner">
+                <img src="./poster.jpg" class="w-[640px]" id="poster" alt="">
+            <div class="suggestion" id="sugg"></div>
+            </div>
+            
+        </div>
+    </div>
+
+    <h1 id="error" class="text-2xl text-neutral-200 my-36 text-center"> </h1>
+    <br><br><br><br><br><br><br><br><br>
+    <br>
+    <footer>
+        <div class="footer">
+            <div class="flex">
+                <h4>Copyright © Rights reserved, bugs reversed.</h4>
+                <h4>Powered by ❤️</h4>
+                <!-- <img class="w-[120px] absolute right-0" src="./uTorrent-Logo.png" alt=""> -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="./app.js"></script>
+</body>
+</html>
+
+  <!-- <hr class="mt-6">
+            <div class="flex items-centered space-between">
+                <div id="poster">
+                <img src="./poster.jpg" class="w-[120px]" alt="">
+                </div>
+                <div id="movieDetails" class="ml-6 text-neutral-500">
+                    <label for="movieName" class="mt-4">Name : </label><br>
+                    <label for="movieName" class="">Name : </label><br>
+                    <label for="movieName" class="">Name : </label><br>
+                    <label for="movieName" class="">Name : </label><br>
+                    <label for="movieName" class="">Name : </label><br>
+                </div>
+            </div> -->

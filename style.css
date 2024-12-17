@@ -1,0 +1,30 @@
+.banner{
+    position: relative;
+}
+.footer{
+    position: absolute;
+    width: 100vw;
+    background-color: rgba(255, 255, 255, 0.602);
+    padding: 8px 50px 8px 50px;
+    color: black;
+    margin-bottom: 80px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.suggestion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(151, 11, 11);
+    padding: 3px 12px;
+    font-size: 14px;
+    color: white;
+    /* margin: 10px; */
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+}
